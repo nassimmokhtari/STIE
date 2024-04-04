@@ -45,7 +45,6 @@ Several parameters can be used to aduste the encoding according to your needs. Y
 
 
 ## Real time detection
-
-![Real time usage exemple](https://github.com/nassimmokhtari/STIE/blob/main/images/drinking.png)
+![Real time usage exemple](https://github.com/nassimmokhtari/STIE/blob/main/images/drinking.jpg)
 
 
