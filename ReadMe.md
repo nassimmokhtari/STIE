@@ -48,3 +48,6 @@ Several parameters can be used to adapt the encoding according to your needs. Yo
 ![Real time usage example](https://github.com/nassimmokhtari/STIE/blob/main/images/drinking.jpg)
 
 
+## Results
+Using pre-trained VGG16
+![Encoded Sequence example](https://github.com/nassimmokhtari/STIE/blob/main/images/OAD_confusion.png)
