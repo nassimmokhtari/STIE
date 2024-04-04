@@ -16,7 +16,6 @@
 import numpy as np
 from os.path import join
 import argparse
-from colorama import Fore
 import os
 
 # List of actions_list from the Online Action Detection Dataset
@@ -100,17 +99,6 @@ def load_data_file(file, order):
         return None
 
 
-def normalize(array):
-    """
-    Normalizes an array between 0 and 1 using the Min-Max normalization
-    :param array: data to normalize
-    :return: normalized data
-    """
-    min_ = np.min(array, 0)
-    max_ = np.max(array, 0)
-    return (array - min_) / (max_ - min_)
-
-
 def get_labels(file):
     """
     Reads a .txt file and return the information related to actions_list (start,end,labels)
@@ -148,7 +136,7 @@ def get_image_label(start, end, labels):
     return None
 
 
-def ESTIE(image):
+def STIE(image):
     """
     Transforms a sequence of skeleton joints into image using the Spatio-Temporal Image Encoding
     :param image: sequence of skeleton joints
@@ -224,7 +212,7 @@ def STIE_sequence(data_path, label_path, window_length, order):
     data = []
     lab = []
     for i in range(len(images)):
-        data.append(ESTIE(images[i]))
+        data.append(STIE(images[i]))
         lab.append(actions_list.index(labels[i]))
 
     data = np.asarray(data)
@@ -277,10 +265,10 @@ def main(data_path, output_dir, one_hot_encoding, window_length, order):
         train_label = to_categorical(train_label)
 
     create_dir(output_dir)
-    np.save(f'{output_dir}/ESTIE_train_x.npy', train)
-    np.save(f'{output_dir}/ESTIE_test_x.npy', test)
-    np.save(f'{output_dir}/ESTIE_train_y.npy', train_label)
-    np.save(f'{output_dir}/ESTIE_test_y.npy', test_label)
+    np.save(f'{output_dir}/STIE_train_x.npy', train)
+    np.save(f'{output_dir}/STIE_test_x.npy', test)
+    np.save(f'{output_dir}/STIE_train_y.npy', train_label)
+    np.save(f'{output_dir}/STIE_test_y.npy', test_label)
     print('Train: data shape', train.shape, 'label shape', train_label.shape)
     print('Test: data shape', test.shape, 'label shape', test_label.shape)
 
