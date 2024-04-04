@@ -36,15 +36,15 @@ You can start the encoding using the default parameters by running the STIE.py f
 
 	python ./STIE.py
 
-Several parameters can be used to aduste the encoding according to your needs. You can find more details about these parameters using :
+Several parameters can be used to adapt the encoding according to your needs. You can find more details about these parameters using :
 
 	python ./STIE.py --help
 
 ## Encoded Sequence
-![Encoded Sequence exemple](https://github.com/nassimmokhtari/STIE/blob/main/images/proposition_1.png)
+![Encoded Sequence example](https://github.com/nassimmokhtari/STIE/blob/main/images/proposition_1.png)
 
 
 ## Real time detection
-![Real time usage exemple](https://github.com/nassimmokhtari/STIE/blob/main/images/drinking.jpg)
+![Real time usage example](https://github.com/nassimmokhtari/STIE/blob/main/images/drinking.jpg)
 
 
