@@ -41,11 +41,11 @@ Several parameters can be used to aduste the encoding according to your needs. Y
 	python ./STIE.py --help
 
 ## Encoded Sequence
-![Encoded Sequence exemple](https://github.com/nassimmokhtari/STIE/tree/main/images/proposition_1.png)
+![Encoded Sequence exemple](https://github.com/nassimmokhtari/STIE/blob/main/images/proposition_1.png)
 
 
 ## Real time detection
 
-![Real time usage exemple](https://github.com/nassimmokhtari/STIE/tree/main/images/drinking.png)
+![Real time usage exemple](https://github.com/nassimmokhtari/STIE/blob/main/images/drinking.png)
 
 
